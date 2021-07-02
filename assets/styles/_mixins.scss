@@ -1,10 +1,10 @@
-@mixin font-primary ($font-color: white) {
+@mixin font-primary ($font-color: $color-primary) {
     font-family: 'roboto',sans-serif;
     color:$font-color;
     font-size: 1rem;
 }
 
-@mixin font-secondary ($font-color: white, $font-size:3rem, $letter-spacing:0.67px, $line-height:3rem) {
+@mixin font-secondary ($font-color: $color-primary, $font-size:3rem, $letter-spacing:0.67px, $line-height:3rem) {
     font-family: 'Poppins', sans-serif;
     font-size: $font-size;
     color: $font-color;
@@ -14,11 +14,12 @@
 
 @mixin boton ($margin: 0) {
     display: flex;
-    margin: $margin;
     width: 144px;
     height: 48px;
     border-radius: 25px;
-    background-color: #E0752F;
+    margin: $margin;
+    background-color: $color-secondary;
     justify-content: center;
     align-items: center;
 }
+

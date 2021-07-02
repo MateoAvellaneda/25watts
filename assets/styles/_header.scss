@@ -59,4 +59,27 @@ padding: 0;
     @include font-primary ();
 }
 
+.header-slider{
+    display: inline-block;
+    margin-left: 101px;
+}
 
+.header-slider input[type="radio"]{
+    display: none;
+}
+
+.header-slider input[type="radio"] + label{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-top: 56px;
+  margin-bottom: 176px;
+  margin-right: 13px;
+  background-color: #5F6368;
+  border-radius: 100%;
+}
+
+
+.header-slider input[type="radio"]:checked + label{
+  background-color: #E0752F;
+}
