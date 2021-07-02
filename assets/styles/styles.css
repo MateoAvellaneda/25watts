@@ -2,118 +2,99 @@ body {
   margin: 0;
 }
 
-* {
-  box-sizing: border-box;
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.header {
+header {
   background-image: url(/assets/images/slider-1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.header-box {
-  width: 100%;
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 96px;
-  position: relative;
-  border-bottom: 1px solid #e0752f;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #E0752F;
 }
 
-.div-logo {
-  display: inline-block;
-  height: 96px;
-  width: 25%;
+.nav-logo {
+  margin-left: 100px;
 }
 
-.div-logo img {
-  box-sizing: content-box;
-  width: 129px;
-  height: 30px;
-  padding: 33px 0px 33px 100.33px;
+.navbar {
+  margin-left: auto;
 }
 
-.div-nav {
-  display: inline-block;
-  position: absolute;
-  text-align: right;
-  width: 75%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.div-nav ul {
+.navbar ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  font-family: "roboto", sans-serif;
-  color: white;
-  list-style: none;
 }
 
-.div-nav ul li {
+.navbar ul li {
   display: inline-block;
   width: 75px;
   text-align: center;
-  margin: 0px 12px;
+  margin: 0 12px;
 }
 
-.div-nav ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.div-nav ul .li-ultimo {
+.navbar ul .ultimo-li {
   margin-right: 101px;
 }
 
-.header-title {
-  font-family: "Poppins", sans-serif;
+.navbar ul li a {
+  text-decoration: none;
+  font-family: 'roboto',sans-serif;
   color: white;
-  margin-top: 158px;
-  margin-left: 101px;
-}
-
-.header-title h1 {
-  margin: 0px;
-  font-size: 3rem;
-  line-height: 3rem;
-  letter-spacing: 0.67px;
-}
-
-.header-paragraph {
-  font-family: "roboto", sans-serif;
-  color: white;
-  margin-left: 101px;
-  margin-top: 30px;
-}
-
-.header-paragraph p {
-  margin: 0px;
   font-size: 1rem;
-  line-height: 21px;
-  letter-spacing: 0.22px;
 }
 
-.header-buttom {
-  font-family: "roboto", sans-serif;
+.header-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
   color: white;
+  letter-spacing: 0.67px;
+  line-height: 3rem;
+  margin: 158.5px 0 0 101px;
+}
+
+.parrafo-title {
+  font-family: 'roboto',sans-serif;
+  color: white;
+  font-size: 1rem;
+  margin: 30px 0 0 101px;
+}
+
+.boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 39px 0 0 101px;
   width: 144px;
   height: 48px;
-  margin-left: 101px;
-  margin-top: 39px;
-  background-color: #e0752f;
   border-radius: 25px;
+  background-color: #E0752F;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.header-buttom a {
-  display: block;
+.boton a {
   text-decoration: none;
-  color: inherit;
-  text-align: center;
+  font-family: 'roboto',sans-serif;
+  color: white;
   font-size: 1rem;
-  line-height: 21px;
-  letter-spacing: 0.22px;
-  padding-top: 14px;
-  padding-bottom: 13px;
 }
-
 /*# sourceMappingURL=styles.css.map */
